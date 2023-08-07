@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/layoutimage"
+        tools:srcCompat="@sample/avatar"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="20sp"
+        android:textColor="#FAFA02"
+        android:layout_toRightOf="@+id/layoutimage"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:id="@+id/layoutname"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textSize="16sp"
+        android:textColor="#FF091D"
+        android:layout_below="@+id/layoutname"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/layoutimage"
+        android:id="@+id/layoutphone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="12sp"
+        android:textColor="#31EF06"
+        android:layout_below="@+id/layoutphone"
+        android:layout_toRightOf="@+id/layoutimage"
+        android:layout_marginLeft="10dp"
+        android:textStyle="italic"
+        android:id="@+id/layoutemail"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/layoutedit"
+        android:layout_marginLeft="60dp"
+        android:layout_toRightOf="@+id/layoutphone"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="15dp"
+        android:text="Edit" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/design_default_color_error"
+        android:layout_marginLeft="310dp"
+        android:layout_marginTop="15dp"
+
+        android:text="Delete" />
+
+
+</RelativeLayout>
